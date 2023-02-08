@@ -1,0 +1,25 @@
+<%- include('fragments/head.ejs')%>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>quantity</th>
+      </tr>
+    </thead>
+    <% if(productsObj) { %>
+    <tbody>
+      <% for(const [key, value] of Object.entries(productsObj)){ %>
+      <tr>
+        <td><%= key %></td>
+        <td><%= value["price"] %></td>
+        <td><%= value["quantity"] %></td>
+      </tr>
+      <% } %>
+    </tbody>
+    <% }%>
+  </table>
+  <a href="/">products page</a>
+</body>
+<%- include('fragments/end.ejs')%>

@@ -1,0 +1,12 @@
+table,
+thead,
+td {
+  border: 1px solid black;
+}
+table {
+  border-collapse: collapse;
+}
+#form {
+  margin-top: 60px;
+  border: solid 2px black;
+}
